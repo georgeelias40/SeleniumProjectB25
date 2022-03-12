@@ -1,4 +1,4 @@
-package com.cydeo.Utilities;
+package com.cydeo.tests.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -15,9 +15,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 //   - if "chrome" passed --> it will open chrome browser
 //   - if "firefox" passed --> it will open firefox browser
 // RETURN TYPE: "WebDriver"
-
-
-
 
 
 public class WebDriverFactory {

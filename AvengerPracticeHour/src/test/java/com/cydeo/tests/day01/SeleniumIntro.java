@@ -9,10 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SeleniumIntro {
     public static void main(String[] args) throws InterruptedException {
 
-        // 1- Setup the "browser driver"
+        // 1- Set up the "browser driver"
         WebDriverManager.chromedriver().setup();
 
-        // 2- Create instance of the Selenium WebDriver, this is the line opening an empty browser
+        // 2- Create instance of the Selenium WebDriver,
+        // this is the line opening an empty browser
         WebDriver driver = new ChromeDriver();
 
         // 3- Maximize the browser size
