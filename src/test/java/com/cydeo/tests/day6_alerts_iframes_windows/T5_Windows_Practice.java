@@ -18,7 +18,7 @@ public class T5_Windows_Practice {
     WebDriver driver;
 
     @BeforeMethod
-    public void setupMethod(){
+    public void setupMethod() {
         //1. Open browser
         driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
@@ -29,7 +29,7 @@ public class T5_Windows_Practice {
     }
 
     @Test
-    public void multiple_window_test(){
+    public void multiple_window_test() {
 
         //Storing the main page's window handle as string is
         // good practice for future re-usable purposes
@@ -55,7 +55,7 @@ public class T5_Windows_Practice {
         // window handle 1 - main window
         // window handle 2 - 2nd window
 
-        for(String each: allWindowHandles){
+        for (String each : allWindowHandles) {
 
             driver.switchTo().window(each);
             System.out.println("Current title while switching windows: " + driver.getTitle());
@@ -75,8 +75,4 @@ public class T5_Windows_Practice {
 
     }
 
-    @AfterMethod
-    public void tearDown(){
-        driver.quit();
-    }
 }
